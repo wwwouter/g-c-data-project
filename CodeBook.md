@@ -12,8 +12,8 @@ These steps were taken to create the new dataset:
 
 The new dataset contains the variables subjectId, activityId, activityName and a set of features.
 
-subjectId (integer): Id of the subject (1-30)
-activityId (integer): Id of het activity (1-6)
+subjectId (integer): Id of the subject (1-30)  
+activityId (integer): Id of het activity (1-6)  
 activityName (string): Name of the activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
 
@@ -27,43 +27,43 @@ This is the description taken from the original codebook (features_info.txt):
 
 *These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.*
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+tBodyAcc-XYZ  
+tGravityAcc-XYZ  
+tBodyAccJerk-XYZ  
+tBodyGyro-XYZ  
+tBodyGyroJerk-XYZ  
+tBodyAccMag  
+tGravityAccMag  
+tBodyAccJerkMag  
+tBodyGyroMag  
+tBodyGyroJerkMag  
+fBodyAcc-XYZ  
+fBodyAccJerk-XYZ  
+fBodyGyro-XYZ  
+fBodyAccMag  
+fBodyAccJerkMag  
+fBodyGyroMag  
+fBodyGyroJerkMag  
 
 *The set of variables that were estimated from these signals are:*
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+mean(): Mean value  
+std(): Standard deviation  
+mad(): Median absolute deviation   
+max(): Largest value in array  
+min(): Smallest value in array  
+sma(): Signal magnitude area  
+energy(): Energy measure. Sum of the squares divided by the number of values.   
+iqr(): Interquartile range   
+entropy(): Signal entropy  
+arCoeff(): Autorregresion coefficients with Burg order equal to 4  
+correlation(): correlation coefficient between two signals  
+maxInds(): index of the frequency component with largest magnitude  
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency  
+skewness(): skewness of the frequency domain signal   
+kurtosis(): kurtosis of the frequency domain signal   
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.  
+angle(): Angle between to vectors.  
 
 
 In the new dataset, only the variables created by using the mean() and std() functions are used.
@@ -72,71 +72,71 @@ For each variable, the mean is calculated for the combination of a subject and a
 
 The names of the variables start with "meanOf", then "Time"" or "Fft"" (old "t" and "f") and then the orignal name, with the non alphabetic characters removed.
 
-meanOfTimeBodyAccMeanX
-meanOfTimeBodyAccMeanY
-meanOfTimeBodyAccMeanZ
-meanOfTimeGravityAccMeanX
-meanOfTimeGravityAccMeanY
-meanOfTimeGravityAccMeanZ
-meanOfTimeBodyAccJerkMeanX
-meanOfTimeBodyAccJerkMeanY
-meanOfTimeBodyAccJerkMeanZ
-meanOfTimeBodyGyroMeanX
-meanOfTimeBodyGyroMeanY
-meanOfTimeBodyGyroMeanZ
-meanOfTimeBodyGyroJerkMeanX
-meanOfTimeBodyGyroJerkMeanY
-meanOfTimeBodyGyroJerkMeanZ
-meanOfTimeBodyAccMagMean
-meanOfTimeGravityAccMagMean
-meanOfTimeBodyAccJerkMagMean
-meanOfTimeBodyGyroMagMean
-meanOfTimeBodyGyroJerkMagMean
-meanOfFftBodyAccMeanX
-meanOfFftBodyAccMeanY
-meanOfFftBodyAccMeanZ
-meanOfFftBodyAccJerkMeanX
-meanOfFftBodyAccJerkMeanY
-meanOfFftBodyAccJerkMeanZ
-meanOfFftBodyGyroMeanX
-meanOfFftBodyGyroMeanY
-meanOfFftBodyGyroMeanZ
-meanOfFftBodyAccMagMean
-meanOfFftBodyAccJerkMagMean
-meanOfFftBodyGyroMagMean
-meanOfFftBodyGyroJerkMagMean
-meanOfTimeBodyAccStdX
-meanOfTimeBodyAccStdY
-meanOfTimeBodyAccStdZ
-meanOfTimeGravityAccStdX
-meanOfTimeGravityAccStdY
-meanOfTimeGravityAccStdZ
-meanOfTimeBodyAccJerkStdX
-meanOfTimeBodyAccJerkStdY
-meanOfTimeBodyAccJerkStdZ
-meanOfTimeBodyGyroStdX
-meanOfTimeBodyGyroStdY
-meanOfTimeBodyGyroStdZ
-meanOfTimeBodyGyroJerkStdX
-meanOfTimeBodyGyroJerkStdY
-meanOfTimeBodyGyroJerkStdZ
-meanOfTimeBodyAccMagStd
-meanOfTimeGravityAccMagStd
-meanOfTimeBodyAccJerkMagStd
-meanOfTimeBodyGyroMagStd
-meanOfTimeBodyGyroJerkMagStd
-meanOfFftBodyAccStdX
-meanOfFftBodyAccStdY
-meanOfFftBodyAccStdZ
-meanOfFftBodyAccJerkStdX
-meanOfFftBodyAccJerkStdY
-meanOfFftBodyAccJerkStdZ
-meanOfFftBodyGyroStdX
-meanOfFftBodyGyroStdY
-meanOfFftBodyGyroStdZ
-meanOfFftBodyAccMagStd
-meanOfFftBodyAccJerkMagStd
-meanOfFftBodyGyroMagStd
+meanOfTimeBodyAccMeanX  
+meanOfTimeBodyAccMeanY  
+meanOfTimeBodyAccMeanZ  
+meanOfTimeGravityAccMeanX  
+meanOfTimeGravityAccMeanY  
+meanOfTimeGravityAccMeanZ  
+meanOfTimeBodyAccJerkMeanX  
+meanOfTimeBodyAccJerkMeanY  
+meanOfTimeBodyAccJerkMeanZ  
+meanOfTimeBodyGyroMeanX  
+meanOfTimeBodyGyroMeanY  
+meanOfTimeBodyGyroMeanZ  
+meanOfTimeBodyGyroJerkMeanX  
+meanOfTimeBodyGyroJerkMeanY  
+meanOfTimeBodyGyroJerkMeanZ  
+meanOfTimeBodyAccMagMean  
+meanOfTimeGravityAccMagMean  
+meanOfTimeBodyAccJerkMagMean  
+meanOfTimeBodyGyroMagMean  
+meanOfTimeBodyGyroJerkMagMean  
+meanOfFftBodyAccMeanX  
+meanOfFftBodyAccMeanY  
+meanOfFftBodyAccMeanZ  
+meanOfFftBodyAccJerkMeanX  
+meanOfFftBodyAccJerkMeanY  
+meanOfFftBodyAccJerkMeanZ  
+meanOfFftBodyGyroMeanX  
+meanOfFftBodyGyroMeanY  
+meanOfFftBodyGyroMeanZ  
+meanOfFftBodyAccMagMean  
+meanOfFftBodyAccJerkMagMean  
+meanOfFftBodyGyroMagMean  
+meanOfFftBodyGyroJerkMagMean  
+meanOfTimeBodyAccStdX  
+meanOfTimeBodyAccStdY  
+meanOfTimeBodyAccStdZ  
+meanOfTimeGravityAccStdX  
+meanOfTimeGravityAccStdY  
+meanOfTimeGravityAccStdZ  
+meanOfTimeBodyAccJerkStdX  
+meanOfTimeBodyAccJerkStdY  
+meanOfTimeBodyAccJerkStdZ  
+meanOfTimeBodyGyroStdX  
+meanOfTimeBodyGyroStdY  
+meanOfTimeBodyGyroStdZ  
+meanOfTimeBodyGyroJerkStdX  
+meanOfTimeBodyGyroJerkStdY  
+meanOfTimeBodyGyroJerkStdZ  
+meanOfTimeBodyAccMagStd  
+meanOfTimeGravityAccMagStd  
+meanOfTimeBodyAccJerkMagStd  
+meanOfTimeBodyGyroMagStd  
+meanOfTimeBodyGyroJerkMagStd  
+meanOfFftBodyAccStdX  
+meanOfFftBodyAccStdY  
+meanOfFftBodyAccStdZ  
+meanOfFftBodyAccJerkStdX  
+meanOfFftBodyAccJerkStdY  
+meanOfFftBodyAccJerkStdZ  
+meanOfFftBodyGyroStdX  
+meanOfFftBodyGyroStdY  
+meanOfFftBodyGyroStdZ  
+meanOfFftBodyAccMagStd  
+meanOfFftBodyAccJerkMagStd  
+meanOfFftBodyGyroMagStd  
 meanOfFftBodyGyroJerkMagStd
 
 
