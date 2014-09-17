@@ -1,4 +1,4 @@
-g-c-data-project
+Getting and Cleaning Data Assesment
 ================
 
 This is the end result of the Peer Assesment of the Getting and Cleaning Data course https://www.coursera.org/course/getdata
