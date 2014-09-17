@@ -72,7 +72,7 @@ angle(): Angle between to vectors.
 
 In the new dataset, only the variables created by using the mean() and std() functions are used.
 
-For each variable, the mean is calculated for the combination of a subject and an activity.
+For each variable, the mean is calculated for the combination of a subject and an activity. The result numeric value.
 
 The names of the variables start with "meanOf", then "Time"" or "Fft"" (old "t" and "f") and then the orignal name, with the non alphabetic characters removed.
 
